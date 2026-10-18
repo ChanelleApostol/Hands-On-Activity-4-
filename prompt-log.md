@@ -15,6 +15,7 @@ Create a simple website to help barangay health workers record and track househo
 
 **Exact Prompt:**
 > Create a simple website that helps barangay health workers record and track household health information
+> Thank You
 
 **Actual Copilot Output:**
   Created a standalone, responsive household health-tracking website in index.html. It includes a dashboard, searchable household register, follow-up statuses, visit logging, and reports. Records are stored in the browser’s local storage.
@@ -34,6 +35,7 @@ The browser verification was incomplete; the focus-loss and keyboard-scroll beha
 
 **Exact Prompt:**
 >   Act as a frontend web developer. Create a responsive single-page Barangay Health Record website for barangay health workers in a local Philippine community. Include a household registry with an add, edit, and remove form, a search and filter bar, a vaccination and checkup reminders section, and a high-risk household dashboard. Use semantic HTML, CSS, and vanilla JavaScript. Do not use external frameworks, backend services, or real personal data, and use fictional sample records only. Provide the required frontend files and implement reminders that show which households are due or overdue for visits. Highlight households with pregnant members, children under 5, or seniors with chronic conditions. The interface must remain readable on mobile screens, and the registry and form must work through mouse and keyboard interaction. Include a notice that the website is a demo and not for real patient data.
+> Thank You
 
 **Actual Copilot Output:**
   Updated index.html with the responsive demo website. It includes household add/edit/remove forms, search and filtering, date-based check-up and vaccination reminders, a high-risk household dashboard, and fictional sample records stored in browser storage. A demo-only notice warns users not to enter real patient data.
@@ -72,6 +74,7 @@ Generate four additional household health follow-up items and display them as an
 
 > Generate four additional household health follow-up items using the same format and render them as 
 > an interactive checklist.
+> Thank You
 
 **Actual Copilot Output:**
   Added an interactive checklist to index.html with four items: Chronic medication review, Child growth monitoring, Blood pressure check-in, and Safe water and sanitation. Each includes a category and description. Checkboxes update a completion indicator and save progress in browser storage.
@@ -91,6 +94,7 @@ Open index.html, check and uncheck items using the mouse and keyboard, then relo
 
 **Exact Prompt:**
 >   Act as a frontend accessibility reviewer. Examine the generated Barangay Health Record website (Alaga | Barangay Health Desk). Identify problems involving HTML semantics, keyboard access, form labels, and visual clarity. Recommend targeted improvements without changing the project’s scope.
+> Thank You
 
 **Actual Copilot Output:**
   Provided a source-level review of index.html with six recommendations: clarify navigation landmarks, announce single-page view changes, improve text contrast and size, associate validation messages with fields, improve table header and mobile-scroll accessibility, and strengthen focus indicators. Also noted existing accessible features, including labeled form controls, dialog focus management, and native checklist checkboxes.
@@ -110,6 +114,7 @@ The review identified actionable improvements tied to existing parts of the webs
 
 **Exact Prompt:**
 >   Review my Barangay Health Record website (Alaga | Barangay Health Desk) against its original requirements: household registry with add, edit, and remove; search and filter; vaccination and checkup reminders; high-risk household dashboard; follow-up checklist; demo notice; keyboard and mouse use; readable on mobile. Check whether the interactive checklist works correctly, whether the HTML uses appropriate semantic elements, and whether the interface is usable on mobile screens. Identify the two most important implementation issues based on the provided code. Give a concise diagnosis, the smallest appropriate correction for each, and a verification procedure I can follow. Do not change the project’s scope.
+> Thank You
 
 **Actual Copilot Output:**
   Reviewed the provided website snapshot and identified two issues: the checklist re-renders after each change and can lose keyboard focus; the horizontally scrollable mobile register is not keyboard-focusable, and the navigation label is on the <aside> instead of the <nav>. Recommended updating checklist elements in place and making the table wrapper keyboard-accessible, naming the navigation landmark, and adding scope="col" to table headers.
